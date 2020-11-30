@@ -45,5 +45,12 @@ const siteContent = {
 let logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"])
 const links = document.querySelectorAll('nav a')
-links.forEach(item => item.textContent = siteContent["nav"])
+// links.forEach((item) => item.textContent = siteContent['nav'])
+links[0].textContent = siteContent['nav']['nav-item-1']
+links[1].textContent = siteContent['nav']['nav-item-2']
+links[2].textContent = siteContent['nav']['nav-item-3']
+links[3].textContent = siteContent['nav']['nav-item-4']
+links[4].textContent = siteContent['nav']['nav-item-5']
+links[5].textContent = siteContent['nav']['nav-item-6']
+
 
