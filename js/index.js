@@ -44,13 +44,35 @@ const siteContent = {
 // Example: Update the img src for the logo
 let logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"])
+let count = 1
 const links = document.querySelectorAll('nav a')
-// links.forEach((item) => item.textContent = siteContent['nav'])
-links[0].textContent = siteContent['nav']['nav-item-1']
-links[1].textContent = siteContent['nav']['nav-item-2']
-links[2].textContent = siteContent['nav']['nav-item-3']
-links[3].textContent = siteContent['nav']['nav-item-4']
-links[4].textContent = siteContent['nav']['nav-item-5']
-links[5].textContent = siteContent['nav']['nav-item-6']
+
+links.forEach(item => {
+  
+  item.textContent = siteContent['nav'][`nav-item-${count}`]
+  count++
+})
+// links[0].textContent = siteContent['nav']['nav-item-1']
+// links[1].textContent = siteContent['nav']['nav-item-2']
+// links[2].textContent = siteContent['nav']['nav-item-3']
+// links[3].textContent = siteContent['nav']['nav-item-4']
+// links[4].textContent = siteContent['nav']['nav-item-5']
+// links[5].textContent = siteContent['nav']['nav-item-6']
+
+const header = document.getElementById('cta-text');
+// header.setAttribute(textContent = siteContent['cta']['h1'])
+
+const title = document.querySelector('h1');
+title.textContent = siteContent['cta']['h1'];
+
+const button = document.querySelector('button');
+button.textContent = siteContent['cta']['button'];
+
+const cta = document.querySelector('.cta');
+const ctaImage = cta.querySelector('img')
+ctaImage.setAttribute('src', "img/header-img.png")
+
+
+
 
 
