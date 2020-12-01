@@ -110,3 +110,20 @@ const visionTitle = vision.querySelector('h4')
 visionTitle.textContent = siteContent['main-content']['vision-h4']
 const visionContent = visionTitle.nextElementSibling;
 visionContent.textContent = siteContent['main-content']['vision-content']
+
+const contactSection = document.querySelector('.contact');
+
+const contactTitle = contactSection.querySelector('h4')
+contactTitle.textContent = siteContent['contact']['contact-h4']
+const contactAddress = contactTitle.nextElementSibling;
+contactAddress.textContent = siteContent['contact']['address']
+const contactPhone = contactAddress.nextElementSibling;
+contactPhone.textContent = siteContent['contact']['phone']
+const contactEmail = contactPhone.nextElementSibling;
+contactEmail.textContent = siteContent['contact']['email']
+
+const footer = document.querySelector('footer')
+
+const footerText = footer.querySelector('p')
+footerText.textContent = siteContent['footer']['copyright']
+
