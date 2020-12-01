@@ -72,7 +72,41 @@ const cta = document.querySelector('.cta');
 const ctaImage = cta.querySelector('img')
 ctaImage.setAttribute('src', "img/header-img.png")
 
+const mainContent = document.querySelector('.main-content');
+// subtitles.textContent = siteContent.
+
+
+const middleImage = mainContent.querySelector('.middle-img');
+middleImage.src = siteContent['main-content']['middle-img-src']
+
+const features = mainContent.querySelector('.top-content .text-content')
+const featuresTitle = features.querySelector('h4')
+featuresTitle.textContent = siteContent['main-content']['features-h4']
+const featuresContent = featuresTitle.nextElementSibling;
+featuresContent.textContent = siteContent['main-content']['features-content']
 
 
 
+const about = features.nextElementSibling;
+const aboutTitle = about.querySelector('h4')
+aboutTitle.textContent = siteContent['main-content']['about-h4']
+const aboutContent = aboutTitle.nextElementSibling;
+aboutContent.textContent = siteContent['main-content']['about-content']
 
+const services = mainContent.querySelector('.bottom-content .text-content')
+const servicesTitle = services.querySelector('h4')
+servicesTitle.textContent = siteContent['main-content']['services-h4']
+const servicesContent = servicesTitle.nextElementSibling;
+servicesContent.textContent = siteContent['main-content']['services-content']
+
+const product = services.nextElementSibling;
+const productTitle = product.querySelector('h4')
+productTitle.textContent = siteContent['main-content']['product-h4']
+const productContent = productTitle.nextElementSibling;
+productContent.textContent = siteContent['main-content']['product-content']
+
+const vision = product.nextElementSibling;
+const visionTitle = vision.querySelector('h4')
+visionTitle.textContent = siteContent['main-content']['vision-h4']
+const visionContent = visionTitle.nextElementSibling;
+visionContent.textContent = siteContent['main-content']['vision-content']
