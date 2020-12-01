@@ -255,6 +255,10 @@ footer {
         border-bottom: 1px solid gray;
     }
 
+    header nav a.green{
+        color: green
+    }
+
     header nav a:first-child {
         border-top: 1px solid gray;
     }

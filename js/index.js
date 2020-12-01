@@ -7,6 +7,7 @@ const siteContent = {
     "nav-item-5": "About",
     "nav-item-6": "Contact",
     "img-src": "img/logo.png"
+    
   },
 
   "cta": {
@@ -126,4 +127,14 @@ const footer = document.querySelector('footer')
 
 const footerText = footer.querySelector('p')
 footerText.textContent = siteContent['footer']['copyright']
+
+const newsLink = document.createElement('a')
+newsLink.textContent = 'News'
+newsLink.href = '#'
+document.querySelector('nav').appendChild(newsLink)
+
+const nav = document.querySelector('nav')
+nav.classList.add('green')
+
+
 
